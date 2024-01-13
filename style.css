@@ -94,5 +94,5 @@ article,footer, .hero, .logo-container, .experience, .cta, .portfolio-skills, .b
     height: 100%;
     object-fit: cover;
     object-position: top 0.4rem right --1.3rem;
-    transform: scale(1.9);
+    transform: scale(1.1);
 }

@@ -1,0 +1,10 @@
+:root {
+    /* Light Mode */
+    /* --primary-font: */
+    --primary-bg-color: #ffffff;
+}
+
+body {
+    background-color: var(--primary-bg-color);
+    
+}

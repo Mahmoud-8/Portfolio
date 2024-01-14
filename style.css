@@ -96,3 +96,64 @@ article,footer, .hero, .logo-container, .experience, .cta, .portfolio-skills, .b
     object-position: top 0.4rem right --1.3rem;
     transform: scale(1.1);
 }
+
+.hero-info h1, h2 {
+    font-weight: 500;
+}
+
+article p, .hero-info h2 {
+    color: var(--secondary-color);
+}
+
+.hero-info h2 {
+    font-size: 1.2rem;
+    margin: 0 0 1rem 0;
+}
+footer, .logo-container, .experience, .cta, .portfolio-skills, .btn-bg {
+    justify-content: center;
+}
+
+.experience {
+    margin: auto;
+    margin-top: 1.4rem;
+    max-width: 20rem;
+}
+
+.experience b {
+font-weight: 500;
+}
+.experience h2 {
+    width: 30%;
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+.cta {
+    margin-top: 1.2rem;
+}
+
+.cta, .btn-bg {
+    gap: 2rem;
+}
+
+.btn, .btn-2, .btn-bg {
+    border-radius: 0.7rem;
+    border: none;
+}
+
+.btn, .btn-2, .btn-bg, .wrapper h3 {
+    font-weight: 600;
+}
+
+.btn, .btn-2, .btn-bg, .wrapper, .project-wrapper {
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.download-btn:hover {
+    background-color: var(--cta-hover-color);
+}
+
+.theme-btn, .download-btn:hover,
+.contact-btn:hover, .btn-2:hover, .wrapper img:hover {
+    cursor: pointer;
+}

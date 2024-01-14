@@ -204,3 +204,10 @@ font-weight: 500;
     position: relative;
 }
 
+.btn-bg, .wrapper {
+    width: 20rem;
+}
+
+article p, .btn-bg {
+    
+}

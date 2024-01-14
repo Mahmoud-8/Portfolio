@@ -157,3 +157,50 @@ font-weight: 500;
 .contact-btn:hover, .btn-2:hover, .wrapper img:hover {
     cursor: pointer;
 }
+
+.btn:hover, 
+.btn-2:hover, 
+.project-wrapper:hover, 
+.logo-container a:hover  {
+    transform: scale(0.98) ;
+}
+
+.btn:active, .btn-2:active, .project-wrapper:active,
+.logo-container a:active {
+    transform: scale(0.95);
+}
+
+.contact-btn:hover, .download-btn {
+    background-color: var(--btn-bg-color);
+}
+
+.contact-btn:hover {
+    transition: background-color 0.3s ease, color 0.3 ease;
+}
+
+.btn-2:hover, .active-btn {
+    background-color: white;
+}
+
+.btn, .btn-2 {
+    height: 3rem;
+}
+
+.btn {
+    width: 9rem;
+}
+
+.btn-2 {
+    width: 8.5rem;
+}
+
+.download-btn {
+    transition: background-color 0.3s ease;
+}
+
+.portfolio-skills {
+    height: 4rem;
+    margin-top: 1.5rem;
+    position: relative;
+}
+

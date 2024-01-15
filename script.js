@@ -1,7 +1,7 @@
 // Function to open Gmail
 function openGmail() {
   let emailAddress = "mahmoud292949@gmail.com";
-  let gmailLink = "https://mail.google.com/mail/u/0/#inbox?compose=new" + encodeURIComponent(emailAddress);
+  let gmailLink = "https://mail.google.com/mail/?view=cm&to=" + encodeURIComponent(emailAddress);
 
   window.open(gmailLink, "_blank");
 }
@@ -9,10 +9,6 @@ function openGmail() {
 // Event listener for the "Contact Me" button to open Gmail
 const gmailBtn = document.getElementById("gmailBtn");
 gmailBtn.addEventListener("click", openGmail);
-
-
-
-
 
 
 

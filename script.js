@@ -1,9 +1,8 @@
 // Function to open Gmail
 function openGmail() {
-  var emailAddress = "mahmoud292949@gmail.com";
-  var gmailLink = "https://mail.google.com/mail/?view=cm&to=" + encodeURIComponent(emailAddress);
+  let emailAddress = "mahmoud292949@gmail.com";
+  let gmailLink = "https://mail.google.com/mail/u/0/#inbox?compose=new" + encodeURIComponent(emailAddress);
 
-  // Open Gmail in a new tab
   window.open(gmailLink, "_blank");
 }
 

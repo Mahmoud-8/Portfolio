@@ -1,3 +1,7 @@
+
+
+
+
 // Click events for buttons
 const portfolio = document.getElementById("portfolio");
 const portfolioBtn = document.getElementById("portfolio-btn");
@@ -17,6 +21,9 @@ skillsBtn.addEventListener("click", (event) => {
   portfolioBtn.classList.remove("active-btn");
   skillsBtn.classList.add("active-btn");
 });
+
+
+
 
 // Light & Dark Theme
 document.addEventListener("DOMContentLoaded", () => {
@@ -61,6 +68,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTheme(isDark);
   };
 
-  // Load saved theme from local storage or default to light theme
   loadTheme();
 });
+
+

@@ -1,3 +1,13 @@
+// Function to open Gmail
+function openGmail() {
+  let emailAddress = "mahmoud292949@gmail.com";
+  let subject = "Subject of your email";
+  let body = "Body of your email";
+
+  let mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+
+  window.open(mailtoLink, "_blank");
+}
 
 
 
@@ -72,3 +82,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+// Event listener for the "Contact Me" button
+const contactBtn = document.querySelector(".contact-btn");
+contactBtn.addEventListener("click", openGmail);

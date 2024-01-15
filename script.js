@@ -6,11 +6,12 @@ function openGmail() {
 
   let mailtoLink = "mailto:" + emailAddress + "?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
 
+  // Display an alert with the email address
+  alert("Email Address: " + emailAddress);
+
+  // Open the mailto link in a new tab
   window.open(mailtoLink, "_blank");
 }
-
-
-
 
 // Click events for buttons
 const portfolio = document.getElementById("portfolio");
@@ -32,9 +33,6 @@ skillsBtn.addEventListener("click", (event) => {
   skillsBtn.classList.add("active-btn");
 });
 
-
-
-
 // Light & Dark Theme
 document.addEventListener("DOMContentLoaded", () => {
   const toggleThemeButton = document.getElementById("toggleTheme");
@@ -44,44 +42,43 @@ document.addEventListener("DOMContentLoaded", () => {
   const emailLogo = document.querySelector('img[alt="email logo"]');
 
   const lightLogos = {
-    github: "assets/github_light.png",
-    linkedin: "assets/linkedin_light.png",
-    email: "assets/email_light.png",
-    theme: "assets/theme_light.png",
+      github: "assets/github_light.png",
+      linkedin: "assets/linkedin_light.png",
+      email: "assets/email_light.png",
+      theme: "assets/theme_light.png",
   };
 
   const darkLogos = {
-    github: "assets/github_dark.png",
-    linkedin: "assets/linkedin_dark.png",
-    email: "assets/email_dark.png",
-    theme: "assets/theme_dark.png",
+      github: "assets/github_dark.png",
+      linkedin: "assets/linkedin_dark.png",
+      email: "assets/email_dark.png",
+      theme: "assets/theme_dark.png",
   };
 
   function setTheme(isDark) {
-    githubLogo.src = isDark ? darkLogos.github : lightLogos.github;
-    linkedinLogo.src = isDark ? darkLogos.linkedin : lightLogos.linkedin;
-    emailLogo.src = isDark ? darkLogos.email : lightLogos.email;
-    themeIcon.src = isDark ? darkLogos.theme : lightLogos.theme;
+      githubLogo.src = isDark ? darkLogos.github : lightLogos.github;
+      linkedinLogo.src = isDark ? darkLogos.linkedin : lightLogos.linkedin;
+      emailLogo.src = isDark ? darkLogos.email : lightLogos.email;
+      themeIcon.src = isDark ? darkLogos.theme : lightLogos.theme;
   }
 
   toggleThemeButton.addEventListener("click", () => {
-    const isDark = document.body.classList.toggle("dark-theme");
-    localStorage.setItem("isDark", isDark);
+      const isDark = document.body.classList.toggle("dark-theme");
+      localStorage.setItem("isDark", isDark);
 
-    setTheme(isDark);
+      setTheme(isDark);
   });
 
   const loadTheme = () => {
-    const isDark = localStorage.getItem("isDark") === "true";
-    document.body.classList.toggle("dark-theme", isDark);
+      const isDark = localStorage.getItem("isDark") === "true";
+      document.body.classList.toggle("dark-theme", isDark);
 
-    setTheme(isDark);
+      setTheme(isDark);
   };
 
+  // Load saved theme from local storage or default to light theme
   loadTheme();
 });
-
-
 
 // Event listener for the "Contact Me" button
 const contactBtn = document.querySelector(".contact-btn");

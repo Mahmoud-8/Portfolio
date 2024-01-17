@@ -1,12 +1,12 @@
 // Function to open Gmail
-function openGmail() {
+
+ function openGmail() {
   let emailAddress = "mahmoud292949@gmail.com";
   let gmailLink = "https://mail.google.com/mail/?view=cm&to=" + encodeURIComponent(emailAddress);
 
   window.open(gmailLink, "_blank");
 }
 
-// Event listener for the "Contact Me" button to open Gmail
 const gmailBtn = document.getElementById("gmailBtn");
 gmailBtn.addEventListener("click", openGmail);
 
@@ -24,6 +24,7 @@ portfolioBtn.addEventListener("click", (event) => {
   skillsBtn.classList.remove("active-btn");
   portfolioBtn.classList.add("active-btn");
 });
+
 
 skillsBtn.addEventListener("click", (event) => {
   skills.style.display = "flex";

@@ -27,7 +27,6 @@
   }
   
   body {
-    margin: 0;
     font-family: var(--primary-font, "Arial, sans-serif");
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
@@ -302,8 +301,25 @@
   footer {
     margin: 3rem 0;
   }
+
+
+
+
+.about-me {
+    padding: 2rem;
+    text-align: center;
+    max-width: 900px; 
+    width: 50%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-left: auto; 
+      margin-right: auto;
+
+}
   
-  @media screen and (min-width: 900px) {
+  
+  @media screen and (min-width: 600px) {
     .skills,
     .portfolio {
       flex-direction: row;
@@ -321,4 +337,6 @@
       width: calc(48%);
       flex: none;
     }
+  
+    
   }
